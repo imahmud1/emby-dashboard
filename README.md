@@ -25,6 +25,7 @@ Create a `config.json` file in the root directory of the project with the follow
     "embyServer": "YOUR_EMBY_SERVER_URL",
     "apiKey": "YOUR_EMBY_API_KEY"
 }
+```
 
 ### Running This Project
 
