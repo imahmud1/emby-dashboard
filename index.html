@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emby Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emby Dashboard</h1>
+        </header>
+        <main>
+            <section id="serverInfoSection">
+                <h2>Server Info</h2>
+                <div class="grid">
+                    <div class="stat-item">
+                        <h3>Server Version</h3>
+                        <p id="serverVersion">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Operating System</h3>
+                        <p id="operatingSystem">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Server Name</h3>
+                        <p id="serverName">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>HTTP Port</h3>
+                        <p id="httpPort">Loading...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sessionInfoSection">
+                <h2>Sessions</h2>
+                <div class="grid">
+                    <div class="stat-item">
+                        <h3>Total Sessions</h3>
+                        <p id="totalSessions">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Active Streams</h3>
+                        <p id="activeStreams">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Playing Streams</h3>
+                        <p id="playingStreams">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Paused Streams</h3>
+                        <p id="pausedStreams">Loading...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mediaInfoSection">
+                <h2>Media Info</h2>
+                <div class="grid">
+                    <div class="stat-item">
+                        <h3>Movies</h3>
+                        <p id="movieCount">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Series</h3>
+                        <p id="seriesCount">Loading...</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Episodes</h3>
+                        <p id="episodeCount">Loading...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="libraryInfoSection">
+                <h2>Libraries</h2>
+                <div id="libraryItems" class="grid"></div>
+            </section>
+        </main>
+        <div id="message"></div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
